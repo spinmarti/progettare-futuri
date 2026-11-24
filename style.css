@@ -178,3 +178,45 @@ footer .page { display: flex; justify-content: space-between; gap: 1rem; flex-wr
   .archive { grid-template-columns: repeat(2, 1fr); }
   .case:nth-child(odd) { border-left: 0; padding-left: 0; }
 }
+
+/* ---------- Linea del tempo in scala ---------- */
+.tl { margin-top: 0.5rem; }
+.tl-axis, .lane { display: grid; grid-template-columns: 9rem 1fr; }
+.tl .track { position: relative; margin-right: 1rem; }
+.tl-axis .track { height: 1.6rem; border-bottom: 1px solid var(--rule); }
+.tl-axis b { position: absolute; bottom: 0.25rem; transform: translateX(-50%); font-size: 11px; font-weight: 600; }
+.lane { border-bottom: 1px solid var(--hair); }
+.lane .track::before { content: ""; position: absolute; left: 0; right: 0; top: 0.9rem; border-top: 1px solid var(--ink); }
+.lane .track i { position: absolute; top: 0; bottom: 0; border-left: 1px dotted var(--hair); }
+.lane-name { font-size: 12px; font-weight: 700; padding-top: 0.5rem; }
+.ev { position: absolute; top: 0.9rem; width: 0; height: 100%; }
+.ev::before {
+  content: ""; position: absolute; left: -5px; top: -5px; width: 10px; height: 10px;
+  border-radius: 50%; background: var(--ink); z-index: 1;
+}
+.ev span {
+  position: absolute; left: 0; white-space: nowrap; padding: 0.1rem 0.4rem 0.15rem;
+  border-left: 1px solid var(--ink); font-size: 11px; line-height: 1.3; background: var(--bg); z-index: 1;
+}
+.ev.r0 span { top: 0.45rem; }
+.ev.r1 span { top: 2.00rem; }
+.ev.r2 span { top: 3.55rem; }
+.ev.r3 span { top: 5.10rem; }
+.ev.r4 span { top: 6.65rem; }
+.ev.r5 span { top: 8.20rem; }
+.ev.end span { left: auto; right: 0; border-left: 0; border-right: 1px solid var(--ink); text-align: right; }
+.ev.r0::after { height: 0.45rem; }
+.ev.r1::after { height: 2.00rem; }
+.ev.r2::after { height: 3.55rem; }
+.ev.r3::after { height: 5.10rem; }
+.ev.r4::after { height: 6.65rem; }
+.ev.r5::after { height: 8.20rem; }
+.ev::after { content: ""; position: absolute; left: 0; top: 0; border-left: 1px solid var(--ink); }
+.ev:hover::before { background: var(--green); box-shadow: 0 0 0 2px var(--ink); }
+.ev:hover span { background: var(--green); z-index: 3; }
+.chron { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+@media (max-width: 860px) {
+  .tl { display: none; }
+  .chron { position: static; width: auto; height: auto; overflow: visible; clip: auto; }
+}
