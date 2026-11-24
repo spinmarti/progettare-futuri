@@ -7,66 +7,92 @@
   <meta name="description" content="Due tradizioni progettuali che lavorano sul futuro: il design speculativo apre il dibattito su quali futuri vogliamo, il Transition Design lavora su come arrivarci.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="nav">
-  <div class="wrap">
-    <a class="brand" href="#top">Progettare futuri</a>
-    <ul>
-      <li><a href="#premessa">Premessa</a></li>
-      <li><a href="#cronologia">Cronologia</a></li>
-      <li><a href="#speculativo">Design speculativo</a></li>
-      <li><a href="#transition">Transition Design</a></li>
-      <li><a href="#insieme">Insieme</a></li>
-      <li><a href="#laboratorio">Laboratorio</a></li>
-      <li><a href="#letture">Letture</a></li>
-    </ul>
+<header class="top">
+  <div class="page">
+    <a class="logo" href="#inizio">Progettare futuri</a>
+    <nav aria-label="Sezioni">
+      <a href="#premessa">Premessa</a>
+      <a href="#cronologia">Cronologia</a>
+      <a href="#speculativo">Design speculativo</a>
+      <a href="#casi">Casi studio</a>
+      <a href="#transition">Transition Design</a>
+      <a href="#insieme">Insieme</a>
+      <a href="#laboratorio">Laboratorio</a>
+      <a href="#letture">Letture</a>
+    </nav>
   </div>
-</nav>
+</header>
 
-<main id="top">
+<main class="page" id="inizio">
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="wrap">
+  <!-- APERTURA -->
+  <div class="intro">
+    <div>
       <p class="kicker">Storia del Pensiero Sistemico · Lab di Storia per i Sistemi Alimentari</p>
-      <h1>Progettare futuri</h1>
-      <p class="lead">Dal design speculativo al Transition Design</p>
-      <p class="intro">Due tradizioni progettuali lavorano sul futuro in modi diversi. Il design speculativo apre il dibattito su quali futuri vogliamo. Il Transition Design lavora su come arrivarci, nei tempi lunghi e dentro sistemi complessi.</p>
-      <div class="legend">
-        <span style="--c: var(--spec)">Design speculativo</span>
-        <span style="--c: var(--trans)">Transition Design</span>
-        <span style="--c: var(--ctx)">Contesto</span>
-      </div>
+      <h1 class="title">Progettare futuri</h1>
+      <p class="subtitle">Dal design speculativo al Transition Design</p>
+      <ul class="stairs" aria-label="Indice">
+        <li class="l1"><a href="#premessa">Premessa</a></li>
+        <li class="l1"><a href="#cronologia">Cronologia</a></li>
+        <li class="l1"><a href="#speculativo">Design speculativo</a></li>
+        <li class="l2"><a href="#radici">Le radici</a></li>
+        <li class="l2"><a href="#critico">Design critico</a></li>
+        <li class="l2"><a href="#critiche">Le critiche</a></li>
+        <li class="l3"><a href="#casi">Casi studio</a></li>
+        <li class="l1"><a href="#transition">Transition Design</a></li>
+        <li class="l2"><a href="#fry">Defuturing</a></li>
+        <li class="l2"><a href="#framework">Framework e processo</a></li>
+        <li class="l2"><a href="#orizzonti">Three Horizons</a></li>
+        <li class="l1"><a href="#insieme">Insieme</a></li>
+        <li class="l1"><a href="#laboratorio">Laboratorio</a></li>
+        <li class="l2"><a href="#kit">Kit</a></li>
+        <li class="l2"><a href="#letture">Letture</a></li>
+      </ul>
     </div>
-  </header>
+    <div class="intro-text">
+      <p>Due tradizioni progettuali lavorano sul futuro in modi diversi. Il design speculativo apre il dibattito su quali futuri vogliamo. Il Transition Design lavora su come arrivarci, nei tempi lunghi e dentro sistemi complessi.</p>
+      <ul class="legend">
+        <li><b>Design speculativo</b><span>rendere i futuri tangibili</span></li>
+        <li><b>Transition Design</b><span>trasformare i sistemi</span></li>
+        <li><b>Contesto</b><span>futures studies e critiche</span></li>
+      </ul>
+    </div>
+  </div>
 
   <!-- PREMESSA -->
-  <section id="premessa">
-    <div class="wrap split">
+  <section class="row" id="premessa">
+    <aside>
+      <h2>Premessa</h2>
+      <ul class="sub">
+        <li><a href="#premessa">Futures studies in breve</a></li>
+        <li><a href="#premessa">Il cono dei futuri</a></li>
+      </ul>
+    </aside>
+    <div class="two">
       <div>
-        <p class="kicker">Premessa · Futures studies in breve</p>
-        <h2>Il futuro diventa materia di progetto</h2>
+        <h3 class="lead" style="font-weight:700">Il futuro diventa materia di progetto</h3>
         <p>Con i <em>futuribles</em> di De Jouvenel il futuro diventa plurale. Nel 1972 <em>The Limits to Growth</em> mostra con gli scenari che il futuro dipende dalle scelte di oggi.</p>
         <p>Il cono dei futuri distingue possibile, plausibile, probabile e preferibile: è nel preferibile che entra il design.</p>
       </div>
-      <figure class="panel">
-        <svg viewBox="0 0 600 400" role="img" aria-label="Cono dei futuri: da oggi si aprono le fasce del possibile, del plausibile, del probabile (design di mercato) e del preferibile; la zona del design speculativo sta tra plausibile e preferibile" font-family="Inter, system-ui, sans-serif">
-          <polygon points="30,200 580,20 580,380" fill="#f3e2d8"/>
-          <polygon points="30,200 580,80 580,320" fill="#dadcef"/>
-          <polygon points="30,200 580,135 580,268" fill="#edc3a8"/>
-          <polygon points="30,200 580,172 580,244" fill="#3d4a9c"/>
-          <circle cx="30" cy="200" r="7" fill="#1f1f1f"/>
-          <text x="30" y="228" font-size="14" text-anchor="middle" fill="#1f1f1f">Oggi</text>
-          <g font-size="15" text-anchor="end" fill="#1f1f1f">
+      <figure>
+        <svg viewBox="0 0 600 400" role="img" aria-label="Cono dei futuri: da oggi si aprono le fasce del possibile, del plausibile, del probabile (design di mercato) e del preferibile; la zona del design speculativo sta tra plausibile e preferibile" font-family="Inter, Helvetica, Arial, sans-serif">
+          <polygon points="30,200 580,20 580,380" fill="#f0f0f0"/>
+          <polygon points="30,200 580,80 580,320" fill="#dcdcdc"/>
+          <polygon points="30,200 580,135 580,268" fill="#bdbdbd"/>
+          <polygon points="30,200 580,172 580,244" fill="#4cf03c"/>
+          <circle cx="30" cy="200" r="7" fill="#111"/>
+          <text x="30" y="228" font-size="14" text-anchor="middle" fill="#111">Oggi</text>
+          <g font-size="15" text-anchor="end" fill="#111">
             <text x="568" y="52">Possibile</text>
             <text x="568" y="108">Plausibile</text>
             <text x="568" y="160">Probabile · design di mercato</text>
-            <text x="568" y="214" fill="#fff" font-weight="700">Preferibile</text>
-            <text x="568" y="296" fill="#3d4a9c" font-weight="700">Zona del design speculativo</text>
+            <text x="568" y="214" font-weight="700">Preferibile</text>
+            <text x="568" y="296" font-weight="700">Zona del design speculativo</text>
           </g>
         </svg>
         <figcaption>Cono dei futuri semplificato da Voros (2003); zona speculativa da Dunne e Raby (2013).</figcaption>
@@ -75,424 +101,518 @@
   </section>
 
   <!-- CRONOLOGIA -->
-  <section id="cronologia">
-    <div class="wrap">
-      <p class="kicker">Cronologia</p>
-      <h2>Sessant'anni di futuri progettati</h2>
-      <ol class="timeline">
-        <li style="--c: var(--spec)"><span class="y">1966</span><span class="t">Nascono Superstudio e Archizoom</span></li>
-        <li style="--c: var(--ctx)"><span class="y">1967</span><span class="t"><em>Futuribili</em>: designer e futurologi</span></li>
-        <li style="--c: var(--ctx)"><span class="y">1972</span><span class="t"><em>The Limits to Growth</em></span></li>
-        <li style="--c: var(--spec)"><span class="y">1999</span><span class="t">Dunne, <em>Hertzian Tales</em></span></li>
-        <li style="--c: var(--trans)"><span class="y">2009</span><span class="t">Fry, <em>Design Futuring</em>; Bleecker, design fiction</span></li>
-        <li style="--c: var(--spec)"><span class="y">2013</span><span class="t"><em>Speculative Everything</em>, <em>United Micro Kingdoms</em></span></li>
-        <li style="--c: var(--trans)"><span class="y">2015</span><span class="t">Transition Design a Carnegie Mellon</span></li>
-        <li style="--c: var(--trans)"><span class="y">2016</span><span class="t">Three Horizons, Sharpe et al.</span></li>
-        <li style="--c: var(--spec)"><span class="y">2017</span><span class="t">Candy e Dunagan, experiential futures</span></li>
-        <li style="--c: var(--ctx)"><span class="y">2018</span><span class="t">Escobar, <em>Designs for the Pluriverse</em></span></li>
-        <li style="--c: var(--spec)"><span class="y">2025</span><span class="t">Dunne e Raby, <em>Not Here, Not Now</em></span></li>
-        <li style="--c: var(--trans)"><span class="y">2026</span><span class="t">Wong et al. e Lockton: speculativo e sistemico insieme</span></li>
+  <section class="row" id="cronologia">
+    <aside>
+      <h2>Cronologia</h2>
+      <ul class="sub">
+        <li><a href="#cronologia">1966–2026</a></li>
+      </ul>
+    </aside>
+    <div>
+      <p class="lead" style="margin-bottom:1rem">Sessant'anni di futuri progettati</p>
+      <ol class="chron">
+        <li><span class="y">1966</span><span>Nascono Superstudio e Archizoom</span><span class="c">Design speculativo</span></li>
+        <li><span class="y">1967</span><span><em>Futuribili</em>: designer e futurologi</span><span class="c">Contesto</span></li>
+        <li><span class="y">1972</span><span><em>The Limits to Growth</em></span><span class="c">Contesto</span></li>
+        <li><span class="y">1999</span><span>Dunne, <em>Hertzian Tales</em></span><span class="c">Design speculativo</span></li>
+        <li><span class="y">2009</span><span>Fry, <em>Design Futuring</em>; Bleecker, design fiction</span><span class="c">Transition Design</span></li>
+        <li><span class="y">2013</span><span><em>Speculative Everything</em>, <em>United Micro Kingdoms</em></span><span class="c">Design speculativo</span></li>
+        <li><span class="y">2015</span><span>Transition Design a Carnegie Mellon</span><span class="c">Transition Design</span></li>
+        <li><span class="y">2016</span><span>Three Horizons, Sharpe et al.</span><span class="c">Transition Design</span></li>
+        <li><span class="y">2017</span><span>Candy e Dunagan, experiential futures</span><span class="c">Design speculativo</span></li>
+        <li><span class="y">2018</span><span>Escobar, <em>Designs for the Pluriverse</em></span><span class="c">Contesto</span></li>
+        <li><span class="y">2025</span><span>Dunne e Raby, <em>Not Here, Not Now</em></span><span class="c">Design speculativo</span></li>
+        <li><span class="y">2026</span><span>Wong et al. e Lockton: speculativo e sistemico insieme</span><span class="c">Transition Design</span></li>
       </ol>
     </div>
   </section>
 
-  <!-- PARTE 1 -->
-  <section class="part spec" id="speculativo">
-    <div class="wrap">
-      <p class="kicker">Parte 1</p>
+  <!-- DESIGN SPECULATIVO -->
+  <section class="row" id="speculativo">
+    <aside>
       <h2>Design speculativo</h2>
+      <ul class="sub">
+        <li><a href="#radici">Le radici</a></li>
+        <li><a href="#critico">Design critico</a></li>
+        <li><a href="#everything">Speculative Everything</a></li>
+        <li><a href="#affini">Pratiche affini</a></li>
+        <li><a href="#critiche">Le critiche</a></li>
+        <li><a href="#casi">Casi studio</a></li>
+      </ul>
+    </aside>
+    <div>
       <p class="lead">Rendere i futuri tangibili, per discuterli.</p>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap split narrow-img">
-      <div>
-        <p class="kicker">Anni sessanta e settanta · Le radici</p>
-        <h2>Il progetto come critica</h2>
-        <div class="grid" style="grid-template-columns: 1fr; margin-top: 1rem;">
-          <div class="card" style="--c: var(--spec)">
-            <span class="tag">Il design radicale</span>
+      <div class="block" id="radici">
+        <p class="label">Anni sessanta e settanta · Le radici</p>
+        <h3>Il progetto come critica</h3>
+        <div class="cols">
+          <div>
+            <p class="label">Il design radicale</p>
             <p>Superstudio e Archizoom, a Firenze dal 1966, usano il progetto per criticare il presente e immaginare altri mondi possibili.</p>
           </div>
-          <div class="card" style="--c: var(--ctx)">
-            <span class="tag"><em>Futuribili</em>, 1967–1974</span>
+          <div>
+            <p class="label"><em>Futuribili</em>, 1967–1974</p>
             <p>Nella rivista di Pietro Ferraro, Gui Bonsiepe e Giulio Carlo Argan discutono di futuro accanto ai futurologi: il design è già al tavolo.</p>
           </div>
         </div>
       </div>
-      <figure>
-        <img onerror="this.closest('figure').hidden=true" src="img/futuribili-13-14.jpg" width="682" height="900" alt="Copertina rossa di Futuribili n. 13-14, agosto-settembre 1969, con il titolo scritto a pennello in nero" loading="lazy">
-        <figcaption><em>Futuribili</em> n. 13-14, 1969. Courtesy Istituto Piemontese per la Storia della Resistenza, Torino.</figcaption>
-      </figure>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <p class="kicker">Dunne e Raby · Royal College of Art</p>
-      <h2>Dal design affermativo al design critico</h2>
-      <p class="lead">Con <em>Hertzian Tales</em> (1999) Anthony Dunne introduce il critical design: oggetti che interrogano la tecnologia invece di renderla solo più desiderabile. Il manifesto A/B, con Fiona Raby, mette a confronto due modi di intendere il progetto.</p>
-      <table class="ab">
-        <thead><tr><th>A · affermativo</th><th>B · critico</th></tr></thead>
-        <tbody>
-          <tr><td>Risolve problemi</td><td>Trova problemi</td></tr>
-          <tr><td>Dà risposte</td><td>Pone domande</td></tr>
-          <tr><td>Progetto per la produzione</td><td>Progetto per il dibattito</td></tr>
-          <tr><td>Fantascienza</td><td>Finzione sociale</td></tr>
-          <tr><td>Applicazioni</td><td>Implicazioni</td></tr>
-          <tr><td>Ci fa comprare</td><td>Ci fa pensare</td></tr>
-        </tbody>
-      </table>
-      <p class="source">Coppie scelte dal manifesto A/B, Dunne e Raby, <em>Speculative Everything</em> (2013).</p>
-    </div>
-  </section>
+      <div class="block" id="critico">
+        <p class="label">Dunne e Raby · Royal College of Art</p>
+        <h3>Dal design affermativo al design critico</h3>
+        <p>Con <em>Hertzian Tales</em> (1999) Anthony Dunne introduce il critical design: oggetti che interrogano la tecnologia invece di renderla solo più desiderabile. Il manifesto A/B, con Fiona Raby, mette a confronto due modi di intendere il progetto.</p>
+        <table class="ab">
+          <thead><tr><th>A · affermativo</th><th>B · critico</th></tr></thead>
+          <tbody>
+            <tr><td>Risolve problemi</td><td>Trova problemi</td></tr>
+            <tr><td>Dà risposte</td><td>Pone domande</td></tr>
+            <tr><td>Progetto per la produzione</td><td>Progetto per il dibattito</td></tr>
+            <tr><td>Fantascienza</td><td>Finzione sociale</td></tr>
+            <tr><td>Applicazioni</td><td>Implicazioni</td></tr>
+            <tr><td>Ci fa comprare</td><td>Ci fa pensare</td></tr>
+          </tbody>
+        </table>
+        <p class="src">Coppie scelte dal manifesto A/B, Dunne e Raby, <em>Speculative Everything</em> (2013).</p>
+      </div>
 
-  <section>
-    <div class="wrap">
-      <p class="kicker">2013 · Speculative Everything</p>
-      <blockquote class="big">Il design speculativo è una posizione, non un metodo: artefatti che incarnano valori alternativi per chiederci quali futuri vogliamo, e per chi.</blockquote>
-      <div class="grid">
-        <div class="card" style="--c: var(--spec)">
-          <h3>Tra plausibile e preferibile</h3>
-          <p>Lontano dal probabile su cui lavora il design di mercato.</p>
+      <div class="block" id="everything">
+        <p class="label">2013 · Speculative Everything</p>
+        <blockquote class="big">Il design speculativo è una posizione, non un metodo: artefatti che incarnano valori alternativi per chiederci quali futuri vogliamo, e per chi.</blockquote>
+        <div class="cols">
+          <div>
+            <h4>Tra plausibile e preferibile</h4>
+            <p>Lontano dal probabile su cui lavora il design di mercato.</p>
+          </div>
+          <div>
+            <h4>United Micro Kingdoms</h4>
+            <p>Design Museum, 2013: un'Inghilterra divisa in quattro società, ciascuna con tecnologie e valori propri.</p>
+          </div>
         </div>
-        <div class="card" style="--c: var(--spec)">
-          <h3>United Micro Kingdoms</h3>
-          <p>Design Museum, 2013: un'Inghilterra divisa in quattro società, ciascuna con tecnologie e valori propri.</p>
+      </div>
+
+      <div class="block" id="affini">
+        <p class="label">Pratiche affini</p>
+        <h3>Far vivere il futuro</h3>
+        <div class="cols">
+          <div>
+            <p class="label">2009</p>
+            <h4>Design fiction</h4>
+            <p>Julian Bleecker: prototipi diegetici, oggetti che rendono credibile un mondo narrativo.</p>
+          </div>
+          <div>
+            <p class="label">2017</p>
+            <h4>Experiential futures</h4>
+            <p>Stuart Candy e Jake Dunagan: situazioni immersive che colmano il divario tra scenari astratti e vita vissuta.</p>
+          </div>
+          <div>
+            <p class="label">2025</p>
+            <h4>Oltre il futuro</h4>
+            <p>Superflux lavora su ecologia e più-che-umano; con <em>Not Here, Not Now</em> Dunne e Raby guardano a ciò che non è qui e non è ora.</p>
+          </div>
+        </div>
+        <p class="src">Un ponte con i futures studies: <em>The Thing from the Future</em>, il gioco di carte di Stuart Candy per immaginare oggetti dal futuro, usato anche nei laboratori UNESCO.</p>
+      </div>
+
+      <div class="block" id="critiche">
+        <p class="label">Le critiche</p>
+        <h3>Futuri di chi?</h3>
+        <div class="cols">
+          <div>
+            <p class="label">Cameron Tonkinwise, 2014</p>
+            <p>I futuri non sono una vetrina tra cui scegliere, ma processi di trasformazione da costruire.</p>
+          </div>
+          <div>
+            <p class="label">Prado e Oliveira, 2014</p>
+            <p>Il design speculativo rischia di proiettare nel futuro i privilegi di uno sguardo occidentale.</p>
+          </div>
+          <div>
+            <p class="label">Arturo Escobar, 2018</p>
+            <p>Il pluriverso: molti mondi, molti modi di progettare.</p>
+          </div>
+          <div>
+            <p class="label">Da qui</p>
+            <p>La spinta verso futuri immaginati con le comunità, radicati nei sistemi reali.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <p class="kicker">Pratiche affini</p>
-      <h2>Far vivere il futuro</h2>
-      <div class="grid">
-        <div class="card" style="--c: var(--spec)">
-          <span class="year">2009</span>
+  <!-- CASI STUDIO -->
+  <section class="row" id="casi">
+    <aside>
+      <h2>Casi studio</h2>
+      <ul class="sub" id="filtri">
+        <li><button type="button" data-filter="tutti" aria-pressed="true">Tutti <span class="count"></span></button></li>
+        <li><button type="button" data-filter="speculativo" aria-pressed="false">Design speculativo <span class="count"></span></button></li>
+        <li><button type="button" data-filter="transition" aria-pressed="false">Transition Design <span class="count"></span></button></li>
+        <li><button type="button" data-filter="cibo" aria-pressed="false">Sistemi alimentari <span class="count"></span></button></li>
+        <li><button type="button" data-filter="strumenti" aria-pressed="false">Strumenti <span class="count"></span></button></li>
+        <li><button type="button" data-filter="contesto" aria-pressed="false">Contesto <span class="count"></span></button></li>
+      </ul>
+    </aside>
+    <div>
+      <!--
+        PER AGGIUNGERE UN CASO STUDIO copia un blocco <article> qui sotto e cambia i testi.
+        data-cat: una o più categorie tra speculativo, transition, cibo, strumenti, contesto (separate da spazio).
+        Immagine: carica il file nella cartella img/casi/ e scrivi il suo nome in src.
+        Se l'immagine manca, al suo posto compare il riquadro nero con il testo di <span class="ph">.
+      -->
+      <div class="archive">
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/superstudio.jpg" alt=""><span class="ph">1966</span></div>
+          <h3>Superstudio e Archizoom</h3>
+          <p class="who">Firenze · dal 1966</p>
+          <p class="desc">Il design radicale usa il progetto per criticare il presente e immaginare altri mondi possibili.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="contesto">
+          <div class="thumb"><img src="img/futuribili-13-14.jpg" alt="Copertina di Futuribili n. 13-14, 1969"><span class="ph">1967</span></div>
+          <h3><em>Futuribili</em></h3>
+          <p class="who">Pietro Ferraro · 1967–1974</p>
+          <p class="desc">Bonsiepe e Argan discutono di futuro accanto ai futurologi. Copertina del n. 13-14, 1969, courtesy Istoreto, Torino.</p>
+          <p class="tag">Contesto</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/hertzian-tales.jpg" alt=""><span class="ph">1999</span></div>
+          <h3><em>Hertzian Tales</em></h3>
+          <p class="who">Anthony Dunne · 1999</p>
+          <p class="desc">Nasce il critical design: oggetti che interrogano la tecnologia invece di renderla più desiderabile.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/design-fiction.jpg" alt=""><span class="ph">2009</span></div>
           <h3>Design fiction</h3>
-          <p>Julian Bleecker: prototipi diegetici, oggetti che rendono credibile un mondo narrativo.</p>
-        </div>
-        <div class="card" style="--c: var(--spec)">
-          <span class="year">2017</span>
-          <h3>Experiential futures</h3>
-          <p>Stuart Candy e Jake Dunagan: situazioni immersive che colmano il divario tra scenari astratti e vita vissuta.</p>
-        </div>
-        <div class="card" style="--c: var(--spec)">
-          <span class="year">2025</span>
-          <h3>Oltre il futuro</h3>
-          <p>Superflux lavora su ecologia e più-che-umano; con <em>Not Here, Not Now</em> Dunne e Raby guardano a ciò che non è qui e non è ora.</p>
-        </div>
+          <p class="who">Julian Bleecker · 2009</p>
+          <p class="desc">Prototipi diegetici: oggetti che rendono credibile un mondo narrativo.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/united-micro-kingdoms.jpg" alt=""><span class="ph">2013</span></div>
+          <h3>United Micro Kingdoms</h3>
+          <p class="who">Dunne e Raby · Design Museum, 2013</p>
+          <p class="desc">Un'Inghilterra divisa in quattro società, ciascuna con tecnologie e valori propri.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/people-who-vanished.jpg" alt=""><span class="ph">2017</span></div>
+          <h3><em>The People Who Vanished</em></h3>
+          <p class="who">Candy e Dunagan · 2017</p>
+          <p class="desc">Experiential futures: situazioni immersive che colmano il divario tra scenari astratti e vita vissuta.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/superflux.jpg" alt=""><span class="ph">SF</span></div>
+          <h3>Superflux</h3>
+          <p class="who">Studio · Londra</p>
+          <p class="desc">Futuri speculativi su ecologia e più-che-umano.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="speculativo">
+          <div class="thumb"><img src="img/casi/not-here-not-now.jpg" alt=""><span class="ph">2025</span></div>
+          <h3><em>Not Here, Not Now</em></h3>
+          <p class="who">Dunne e Raby · 2025</p>
+          <p class="desc">Lo sguardo si sposta su ciò che non è qui e non è ora.</p>
+          <p class="tag">Design speculativo</p>
+        </article>
+
+        <article class="case" data-cat="transition cibo">
+          <div class="thumb"><img src="img/casi/fixourfood.jpg" alt=""><span class="ph">2024</span></div>
+          <h3>FixOurFood</h3>
+          <p class="who">Yorkshire · Buckton et al., 2024</p>
+          <p class="desc">Un processo Three Horizons contrappone il sistema alimentare "degenerativo" a uno rigenerativo e individua sei aree d'azione.</p>
+          <p class="tag">Transition Design · Sistemi alimentari</p>
+        </article>
+
+        <article class="case" data-cat="speculativo cibo">
+          <div class="thumb"><img src="img/casi/orti-urbani-newcastle.jpg" alt=""><span class="ph">Orti</span></div>
+          <h3>Orti urbani</h3>
+          <p class="who">Open Lab, Newcastle University</p>
+          <p class="desc">Design speculativo partecipativo con una comunità di coltivatori: mappe, camminate, giochi e making per immaginare la sovranità alimentare.</p>
+          <p class="tag">Design speculativo · Sistemi alimentari</p>
+        </article>
+
+        <article class="case" data-cat="strumenti speculativo">
+          <div class="thumb"><img src="img/casi/thing-from-the-future.jpg" alt=""><span class="ph">Carte</span></div>
+          <h3><em>The Thing from the Future</em></h3>
+          <p class="who">Candy e Watson · Situation Lab</p>
+          <p class="desc">Carte gratuite da stampare per immaginare oggetti dal futuro, usate anche nei laboratori UNESCO.</p>
+          <p class="tag">Strumenti</p>
+        </article>
+
       </div>
-      <p class="note" style="--c: var(--spec)">Un ponte con i futures studies: <em>The Thing from the Future</em>, il gioco di carte di Stuart Candy per immaginare oggetti dal futuro, usato anche nei laboratori UNESCO.</p>
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <p class="kicker">Le critiche</p>
-      <h2>Futuri di chi?</h2>
-      <div class="grid">
-        <div class="card" style="--c: var(--ctx)">
-          <span class="tag">Cameron Tonkinwise, 2014</span>
-          <p>I futuri non sono una vetrina tra cui scegliere, ma processi di trasformazione da costruire.</p>
-        </div>
-        <div class="card" style="--c: var(--ctx)">
-          <span class="tag">Prado e Oliveira, 2014</span>
-          <p>Il design speculativo rischia di proiettare nel futuro i privilegi di uno sguardo occidentale.</p>
-        </div>
-        <div class="card" style="--c: var(--ctx)">
-          <span class="tag">Arturo Escobar, 2018</span>
-          <p>Il pluriverso: molti mondi, molti modi di progettare.</p>
-        </div>
-        <div class="card" style="--c: var(--trans)">
-          <span class="tag">Da qui</span>
-          <p>La spinta verso futuri immaginati con le comunità, radicati nei sistemi reali.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PARTE 2 -->
-  <section class="part trans" id="transition">
-    <div class="wrap">
-      <p class="kicker">Parte 2</p>
+  <!-- TRANSITION DESIGN -->
+  <section class="row" id="transition">
+    <aside>
       <h2>Transition Design</h2>
+      <ul class="sub">
+        <li><a href="#fry">Defuturing</a></li>
+        <li><a href="#framework">Il framework</a></li>
+        <li><a href="#processo">Il processo</a></li>
+        <li><a href="#orizzonti">Three Horizons</a></li>
+      </ul>
+    </aside>
+    <div>
       <p class="lead">Progettare le transizioni dei sistemi, nei tempi lunghi.</p>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap">
-      <p class="kicker">Le radici · Tony Fry, Design Futuring, 2009</p>
-      <h2>Defuturing e pratica redirettiva</h2>
-      <div class="triad">
-        <div>
-          <h3>Defuturing</h3>
-          <strong>L'insostenibile consuma i futuri</strong>
-          <p>Lo sviluppo insostenibile riduce attivamente i futuri possibili.</p>
+      <div class="block" id="fry">
+        <p class="label">Le radici · Tony Fry, <em>Design Futuring</em>, 2009</p>
+        <h3>Defuturing e pratica redirettiva</h3>
+        <div class="cols">
+          <div>
+            <p class="label">Defuturing</p>
+            <h4>L'insostenibile consuma i futuri</h4>
+            <p>Lo sviluppo insostenibile riduce attivamente i futuri possibili.</p>
+          </div>
+          <div>
+            <p class="label">Redirezione</p>
+            <h4>Il design riorienta</h4>
+            <p>Il progetto cambia direzione a pratiche, sistemi e abitudini, invece di ottimizzarli.</p>
+          </div>
+          <div>
+            <p class="label">Sustainment</p>
+            <h4>Sostenere il futuro</h4>
+            <p>Non sostenere lo stato delle cose, ma la possibilità stessa di un futuro.</p>
+          </div>
         </div>
+        <p class="src">Fry distingue la Sustainment da una sostenibilità che finisce per sostenere l'insostenibile. Nel 2026 ha pubblicato <em>Contrapractice: Action Against Defuturing</em>.</p>
+      </div>
+
+      <div class="block two" id="framework">
         <div>
-          <h3>Redirezione</h3>
-          <strong>Il design riorienta</strong>
-          <p>Il progetto cambia direzione a pratiche, sistemi e abitudini, invece di ottimizzarli.</p>
+          <p class="label">Carnegie Mellon · 2015</p>
+          <h3>Il framework</h3>
+          <p>Terry Irwin, Gideon Kossoff e Cameron Tonkinwise propongono il Transition Design come nuovo ambito di pratica e ricerca.</p>
+          <p>Quattro aree che si rafforzano a vicenda: cambiare una cambia le altre.</p>
         </div>
+        <figure>
+          <svg viewBox="0 0 600 430" role="img" aria-label="Transition Design Framework in quattro aree collegate da un ciclo: visione per la transizione, teorie del cambiamento, mentalità e postura, nuovi modi di progettare" font-family="Inter, Helvetica, Arial, sans-serif">
+            <rect x="0" y="0" width="290" height="205" fill="#f0f0f0"/>
+            <rect x="310" y="0" width="290" height="205" fill="#dcdcdc"/>
+            <rect x="0" y="225" width="290" height="205" fill="#dcdcdc"/>
+            <rect x="310" y="225" width="290" height="205" fill="#111"/>
+            <g text-anchor="middle" fill="#111">
+              <text x="145" y="95" font-size="26" font-weight="800">Visione</text><text x="145" y="125" font-size="16">per la transizione</text>
+              <text x="455" y="95" font-size="26" font-weight="800">Teorie</text><text x="455" y="125" font-size="16">del cambiamento</text>
+              <text x="145" y="320" font-size="26" font-weight="800">Mentalità</text><text x="145" y="350" font-size="16">e postura</text>
+              <text x="455" y="320" font-size="26" font-weight="800" fill="#fff">Nuovi modi</text><text x="455" y="350" font-size="16" fill="#fff">di progettare</text>
+            </g>
+            <circle cx="300" cy="215" r="36" fill="#4cf03c" stroke="#fff" stroke-width="6"/>
+            <path d="M285 222 A15 15 0 1 1 300 230" fill="none" stroke="#111" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <figcaption>Ridisegnato da Irwin (2015) e Irwin e Kossoff.</figcaption>
+        </figure>
+      </div>
+
+      <div class="block two" id="processo">
         <div>
-          <h3>Sustainment</h3>
-          <strong>Sostenere il futuro</strong>
-          <p>Non sostenere lo stato delle cose, ma la possibilità stessa di un futuro.</p>
+          <p class="label">Il processo</p>
+          <h3>Riformulare, intervenire, osservare</h3>
+          <p>Mappare il problema complesso e gli attori, con paure e speranze. Costruire una visione condivisa a lungo termine e procedere a ritroso con il backcasting.</p>
+          <p>Progettare ecologie di interventi, non soluzioni singole, poi osservare come risponde il sistema e correggere la rotta.</p>
         </div>
+        <figure>
+          <svg viewBox="0 0 600 440" role="img" aria-label="Ciclo del Transition Design attorno a una visione condivisa: riformulare presente e futuro, progettare ecologie di interventi, attendere e osservare" font-family="Inter, Helvetica, Arial, sans-serif">
+            <defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#111"/></marker></defs>
+            <circle cx="300" cy="228" r="62" fill="#4cf03c"/>
+            <g fill="none" stroke="#111" stroke-width="3">
+              <path d="M405 105 C470 150 500 230 480 300" marker-end="url(#ah)"/>
+              <path d="M400 385 C330 425 260 425 200 395" marker-end="url(#ah)"/>
+              <path d="M120 300 C100 230 130 150 195 105" marker-end="url(#ah)"/>
+            </g>
+            <g stroke="#111" stroke-width="2" fill="#fff">
+              <rect x="185" y="40" width="230" height="66"/>
+              <rect x="5" y="310" width="230" height="66"/>
+              <rect x="365" y="310" width="230" height="66"/>
+            </g>
+            <g text-anchor="middle" fill="#111">
+              <text x="300" y="70" font-size="20" font-weight="800">Riformulare</text><text x="300" y="93" font-size="14" fill="#555">presente e futuro</text>
+              <text x="120" y="340" font-size="20" font-weight="800">Attendere</text><text x="120" y="363" font-size="14" fill="#555">e osservare</text>
+              <text x="480" y="340" font-size="20" font-weight="800">Progettare</text><text x="480" y="363" font-size="14" fill="#555">ecologie di interventi</text>
+              <text x="300" y="222" font-size="18" font-weight="700">visione</text><text x="300" y="246" font-size="18" font-weight="700">condivisa</text>
+            </g>
+          </svg>
+          <figcaption>Semplificato da Irwin (2019).</figcaption>
+        </figure>
       </div>
-      <p class="note" style="--c: var(--trans)">Fry distingue la Sustainment da una sostenibilità che finisce per sostenere l'insostenibile. Nel 2026 ha pubblicato <em>Contrapractice: Action Against Defuturing</em>.</p>
-    </div>
-  </section>
 
-  <section>
-    <div class="wrap split">
-      <div>
-        <p class="kicker">Carnegie Mellon · 2015</p>
-        <h2>Il framework</h2>
-        <p>Terry Irwin, Gideon Kossoff e Cameron Tonkinwise propongono il Transition Design come nuovo ambito di pratica e ricerca.</p>
-        <p>Quattro aree che si rafforzano a vicenda: cambiare una cambia le altre.</p>
-      </div>
-      <figure>
-        <svg viewBox="0 0 600 430" role="img" aria-label="Transition Design Framework in quattro aree collegate da un ciclo: visione per la transizione, teorie del cambiamento, mentalità e postura, nuovi modi di progettare" font-family="Inter, system-ui, sans-serif">
-          <rect x="0" y="0" width="290" height="205" rx="16" fill="#dce6e3"/>
-          <rect x="310" y="0" width="290" height="205" rx="16" fill="#b5cbc8"/>
-          <rect x="0" y="225" width="290" height="205" rx="16" fill="#b5cbc8"/>
-          <rect x="310" y="225" width="290" height="205" rx="16" fill="#2f5c62"/>
-          <g text-anchor="middle" fill="#1f1f1f">
-            <text x="145" y="95" font-size="26" font-weight="800">Visione</text><text x="145" y="125" font-size="16">per la transizione</text>
-            <text x="455" y="95" font-size="26" font-weight="800">Teorie</text><text x="455" y="125" font-size="16">del cambiamento</text>
-            <text x="145" y="320" font-size="26" font-weight="800">Mentalità</text><text x="145" y="350" font-size="16">e postura</text>
-            <text x="455" y="320" font-size="26" font-weight="800" fill="#fff">Nuovi modi</text><text x="455" y="350" font-size="16" fill="#fff">di progettare</text>
-          </g>
-          <circle cx="300" cy="215" r="36" fill="#faf8f4" stroke="#2f5c62" stroke-width="4"/>
-          <path d="M285 222 A15 15 0 1 1 300 230" fill="none" stroke="#2f5c62" stroke-width="4" stroke-linecap="round"/>
-        </svg>
-        <figcaption>Ridisegnato da Irwin (2015) e Irwin e Kossoff.</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap split">
-      <figure>
-        <svg viewBox="0 0 600 440" role="img" aria-label="Ciclo del Transition Design attorno a una visione condivisa: riformulare presente e futuro, progettare ecologie di interventi, attendere e osservare" font-family="Inter, system-ui, sans-serif">
-          <defs><marker id="ah" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f5c62"/></marker></defs>
-          <g fill="none" stroke="#2f5c62" stroke-width="3.5">
-            <path d="M405 105 C470 150 500 230 480 300" marker-end="url(#ah)"/>
-            <path d="M400 385 C330 425 260 425 200 395" stroke-dasharray="2 0" marker-end="url(#ah)"/>
-            <path d="M120 300 C100 230 130 150 195 105" marker-end="url(#ah)"/>
-          </g>
-          <g stroke="#2f5c62" stroke-width="3" fill="#faf8f4">
-            <rect x="185" y="40" width="230" height="66" rx="33"/>
-            <rect x="5" y="310" width="230" height="66" rx="33"/>
-            <rect x="365" y="310" width="230" height="66" rx="33"/>
-          </g>
-          <g text-anchor="middle">
-            <text x="300" y="70" font-size="20" font-weight="800" fill="#1f1f1f">Riformulare</text><text x="300" y="93" font-size="14" fill="#5b5853">presente e futuro</text>
-            <text x="120" y="340" font-size="20" font-weight="800" fill="#1f1f1f">Attendere</text><text x="120" y="363" font-size="14" fill="#5b5853">e osservare</text>
-            <text x="480" y="340" font-size="20" font-weight="800" fill="#1f1f1f">Progettare</text><text x="480" y="363" font-size="14" fill="#5b5853">ecologie di interventi</text>
-            <text x="300" y="215" font-size="19" font-weight="700" fill="#2f5c62">visione</text><text x="300" y="240" font-size="19" font-weight="700" fill="#2f5c62">condivisa</text>
-          </g>
-        </svg>
-        <figcaption>Semplificato da Irwin (2019).</figcaption>
-      </figure>
-      <div>
-        <p class="kicker">Il processo</p>
-        <h2>Riformulare, intervenire, osservare</h2>
-        <p>Mappare il problema complesso e gli attori, con paure e speranze. Costruire una visione condivisa a lungo termine e procedere a ritroso con il backcasting.</p>
-        <p>Progettare ecologie di interventi, non soluzioni singole, poi osservare come risponde il sistema e correggere la rotta.</p>
+      <div class="block two" id="orizzonti">
+        <div>
+          <p class="label">Uno strumento chiave</p>
+          <h3>Three Horizons</h3>
+          <p>Sharpe e colleghi (2016) leggono la transizione come compresenza di tre orizzonti: il sistema dominante che declina, le innovazioni di passaggio, i semi del futuro.</p>
+          <p>Aiuta a riconoscere che cosa sostenere e che cosa lasciar andare.</p>
+        </div>
+        <figure>
+          <svg viewBox="0 0 600 420" role="img" aria-label="Three Horizons: la curva H1 del sistema dominante declina, la curva H2 delle innovazioni di passaggio sale e scende al centro, la curva H3 dei semi del futuro cresce nel tempo" font-family="Inter, Helvetica, Arial, sans-serif">
+            <path d="M40 20 V380 H590" fill="none" stroke="#111" stroke-width="1.5"/>
+            <g fill="none" stroke-width="6" stroke-linecap="round">
+              <path d="M40 80 C200 80 300 200 420 290 S540 350 580 355" stroke="#9a9a9a"/>
+              <path d="M80 360 C180 352 230 155 320 150 C410 145 460 350 560 356" stroke="#111"/>
+              <path d="M40 368 C250 362 360 200 440 130 S540 65 580 60" stroke="#4cf03c"/>
+            </g>
+            <g font-size="15" fill="#111">
+              <text x="52" y="62">H1 · sistema dominante</text>
+              <text x="150" y="128">H2 · innovazioni di passaggio</text>
+              <text x="580" y="40" text-anchor="end" font-weight="700">H3 · semi del futuro</text>
+              <text x="40" y="405" fill="#777">oggi</text><text x="590" y="405" text-anchor="end" fill="#777">tempo</text>
+            </g>
+          </svg>
+          <figcaption>Ridisegnato da Sharpe et al. (2016).</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
-  <section>
-    <div class="wrap split">
-      <div>
-        <p class="kicker">Uno strumento chiave</p>
-        <h2>Three Horizons</h2>
-        <p>Sharpe e colleghi (2016) leggono la transizione come compresenza di tre orizzonti: il sistema dominante che declina, le innovazioni di passaggio, i semi del futuro.</p>
-        <p>Aiuta a riconoscere che cosa sostenere e che cosa lasciar andare.</p>
-      </div>
-      <figure>
-        <svg viewBox="0 0 600 420" role="img" aria-label="Three Horizons: la curva H1 del sistema dominante declina, la curva H2 delle innovazioni di passaggio sale e scende al centro, la curva H3 dei semi del futuro cresce nel tempo" font-family="Inter, system-ui, sans-serif">
-          <path d="M40 20 V380 H590" fill="none" stroke="#1f1f1f" stroke-width="2"/>
-          <g fill="none" stroke-width="6" stroke-linecap="round">
-            <path d="M40 80 C200 80 300 200 420 290 S540 350 580 355" stroke="#5b5853"/>
-            <path d="M80 360 C180 352 230 155 320 150 C410 145 460 350 560 356" stroke="#e0662b"/>
-            <path d="M40 368 C250 362 360 200 440 130 S540 65 580 60" stroke="#2f5c62"/>
-          </g>
-          <g font-size="15">
-            <text x="52" y="62" fill="#1f1f1f">H1 · sistema dominante</text>
-            <text x="150" y="128" fill="#c0521d">H2 · innovazioni di passaggio</text>
-            <text x="580" y="40" text-anchor="end" fill="#2f5c62">H3 · semi del futuro</text>
-            <text x="40" y="405" fill="#5b5853">oggi</text><text x="590" y="405" text-anchor="end" fill="#5b5853">tempo</text>
-          </g>
-        </svg>
-        <figcaption>Ridisegnato da Sharpe et al. (2016).</figcaption>
-      </figure>
-    </div>
-  </section>
-
-  <!-- PARTE 3 -->
-  <section class="part both" id="insieme">
-    <div class="wrap">
-      <p class="kicker">Parte 3 · Insieme</p>
-      <h2>Immaginare e trasformare</h2>
+  <!-- INSIEME -->
+  <section class="row" id="insieme">
+    <aside>
+      <h2>Insieme</h2>
+      <ul class="sub">
+        <li><a href="#insieme">Immaginare e trasformare</a></li>
+      </ul>
+    </aside>
+    <div>
       <p class="lead">La speculazione apre l'immaginazione, la transizione la ancora ai sistemi reali.</p>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <p class="kicker">Ponti</p>
-      <h2>Speculativo e sistemico, insieme</h2>
-      <div class="grid">
-        <div class="card" style="--c: var(--spec)">
-          <span class="tag">Lockton e Candy, 2018</span>
+      <div class="cols">
+        <div>
+          <p class="label">Lockton e Candy, 2018</p>
           <p>Un vocabolario per le visioni nel design per le transizioni.</p>
         </div>
-        <div class="card" style="--c: var(--trans)">
-          <span class="tag">Jones e Van Ael, 2022</span>
+        <div>
+          <p class="label">Jones e Van Ael, 2022</p>
           <p>Immaginare futuri desiderati dentro il processo sistemico.</p>
         </div>
-        <div class="card" style="--c: var(--trans)">
-          <span class="tag">Wong et al., 2026</span>
+        <div>
+          <p class="label">Wong et al., 2026</p>
           <p>Systemic Futures Dialogue: metodi speculativi e sistemici tra micro e macro, presente e futuro.</p>
         </div>
-        <div class="card" style="--c: var(--spec)">
-          <span class="tag">Lockton, 2026</span>
+        <div>
+          <p class="label">Lockton, 2026</p>
           <p>Probe speculativi per chiedere che cosa scomparirà nelle transizioni.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="casi">
-    <div class="wrap">
-      <p class="kicker">Casi · Sistemi alimentari</p>
-      <h2>Futuri del cibo, oggi</h2>
-      <div class="grid">
-        <div class="card" style="--c: var(--trans)">
-          <span class="tag">Transition · Yorkshire</span>
-          <h3>FixOurFood</h3>
-          <p>Un ampio processo Three Horizons contrappone il sistema alimentare attuale, "degenerativo", a uno rigenerativo e individua sei aree d'azione.</p>
-          <p class="meta">Buckton et al., <em>PLOS Sustainability and Transformation</em>, 2024</p>
+  <!-- LABORATORIO -->
+  <section class="row" id="laboratorio">
+    <aside>
+      <h2>Laboratorio</h2>
+      <ul class="sub">
+        <li><a href="#laboratorio">Per la discussione</a></li>
+        <li><a href="#kit">Tre kit da usare in aula</a></li>
+        <li><a href="#materiali">Materiali didattici</a></li>
+      </ul>
+    </aside>
+    <div>
+      <div class="ask">
+        <p class="label" style="color:#111">Per la discussione</p>
+        <h3>Se doveste progettare la transizione del sistema alimentare del vostro territorio, quale futuro rendereste visibile per primo, e a chi lo mostrereste?</h3>
+        <p><b>Esercizio.</b> Immaginate un oggetto dal 2050 che racconti come è cambiato un elemento del sistema alimentare locale, poi ricostruite a ritroso tre interventi che lo rendono possibile.</p>
+        <p class="small">L'esercizio unisce i due approcci: l'oggetto dal futuro è design speculativo, la ricostruzione a ritroso degli interventi è backcasting, cioè Transition Design.</p>
+      </div>
+
+      <div class="block" id="kit" style="padding-top:2rem">
+        <p class="label">Strumenti aperti</p>
+        <h3>Tre kit da usare in aula</h3>
+        <div class="cols">
+          <div>
+            <p class="label">Speculativo · CC BY-NC-SA</p>
+            <h4>The Thing from the Future</h4>
+            <p>Candy e Watson, Situation Lab. Carte gratuite da stampare per immaginare oggetti dal futuro: arco temporale, ambito, oggetto, stato d'animo.</p>
+            <p><a href="https://situationlab.org" target="_blank" rel="noopener">situationlab.org</a></p>
+          </div>
+          <div>
+            <p class="label">Immaginari · CC BY-NC-SA</p>
+            <h4>New Metaphors</h4>
+            <p>Imaginaries Lab, Lockton et al. 150 carte e schede per riformulare problemi e immaginare futuri, con una sessione dedicata alla sostenibilità.</p>
+            <p><a href="https://imaginari.es" target="_blank" rel="noopener">imaginari.es</a></p>
+          </div>
+          <div>
+            <p class="label">Sistemico · CC BY 4.0</p>
+            <h4>Systemic Design Toolkit</h4>
+            <p>Design Council: undici strumenti stampabili lungo le fasi del design sistemico. In alternativa il kit di Namahn e shiftN, con sette strumenti gratuiti.</p>
+            <p><a href="https://www.designcouncil.org.uk" target="_blank" rel="noopener">designcouncil.org.uk</a></p>
+          </div>
         </div>
-        <div class="card" style="--c: var(--spec)">
-          <span class="tag">Speculativo · Newcastle</span>
-          <h3>Orti urbani</h3>
-          <p>Design speculativo partecipativo con una comunità di coltivatori: mappe, camminate, giochi e making per immaginare la sovranità alimentare.</p>
-          <p class="meta">Open Lab, Newcastle University</p>
-        </div>
+        <p class="src">Una sequenza possibile per l'esercizio: <em>The Thing from the Future</em> per generare l'oggetto dal 2050, poi una mappa degli attori e il backcasting con il Systemic Design Toolkit. Il corso di Speculative Design dell'Australian National University segue un percorso simile: Thing from the Future, carte archetipo, costruzione di mondi.</p>
+      </div>
+
+      <div class="block" id="materiali">
+        <p class="label">Per approfondire · Materiali didattici aperti</p>
+        <h3>Come lo insegnano gli altri</h3>
+        <table>
+          <thead><tr><th>Risorsa</th><th>Perché è utile</th></tr></thead>
+          <tbody>
+            <tr><td>Transition Design Seminar, Carnegie Mellon</td><td>Programma completo del seminario di Irwin, Kossoff e Tonkinwise, con letture</td></tr>
+            <tr><td>Irwin, Tonkinwise, Kossoff, <em>Cuaderno</em> 105, 2021</td><td>Come il Transition Design entra nel curriculum, dalla triennale al dottorato</td></tr>
+            <tr><td>Candy, <em>The Futures of Everyday Life</em>, 2010</td><td>La prima tesi di dottorato tra foresight e design</td></tr>
+            <tr><td>Bendor e Lupetti, <em>Teaching speculative design</em>, 2024</td><td>Il design speculativo come pratica didattica critica, ad accesso aperto</td></tr>
+            <tr><td>Mazé, lezione ad Aalto, 2019</td><td>Design e futures studies come pratica critica e politica</td></tr>
+            <tr><td>Atti RSD e DRS, 2021–2026</td><td>Articoli aperti su design sistemico, transizioni e speculazione</td></tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </section>
 
-  <!-- DISCUSSIONE -->
-  <section class="discussion" id="laboratorio">
-    <div class="wrap">
-      <p class="kicker">Per la discussione</p>
-      <h2>Se doveste progettare la transizione del sistema alimentare del vostro territorio, quale futuro rendereste visibile per primo, e a chi lo mostrereste?</h2>
-      <div class="exercise">
-        <p class="kicker">Esercizio</p>
-        <p>Immaginate un oggetto dal 2050 che racconti come è cambiato un elemento del sistema alimentare locale, poi ricostruite a ritroso tre interventi che lo rendono possibile.</p>
-        <p class="note">L'esercizio unisce i due approcci: l'oggetto dal futuro è design speculativo, la ricostruzione a ritroso degli interventi è backcasting, cioè Transition Design.</p>
+  <!-- LETTURE -->
+  <section class="row" id="letture">
+    <aside>
+      <h2>Letture</h2>
+      <ul class="sub">
+        <li><a href="#letture">Letture essenziali</a></li>
+      </ul>
+    </aside>
+    <div class="reads">
+      <div>
+        <h4>Design speculativo e critico</h4>
+        <ul>
+          <li>Dunne, <em>Hertzian Tales</em>, 1999</li>
+          <li>Dunne e Raby, <em>Speculative Everything</em>, 2013</li>
+          <li>Dunne e Raby, <em>Not Here, Not Now</em>, 2025</li>
+          <li>Bleecker, <em>Design Fiction</em>, 2009</li>
+          <li>Candy e Dunagan, <em>The People Who Vanished</em>, Futures, 2017</li>
+        </ul>
       </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <p class="kicker">Per il laboratorio · Strumenti aperti</p>
-      <h2>Tre kit da usare in aula</h2>
-      <div class="grid">
-        <div class="card" style="--c: var(--spec)">
-          <span class="tag">Speculativo · CC BY-NC-SA</span>
-          <h3>The Thing from the Future</h3>
-          <p>Candy e Watson, Situation Lab. Carte gratuite da stampare per immaginare oggetti dal futuro: arco temporale, ambito, oggetto, stato d'animo.</p>
-          <p class="meta"><a href="https://situationlab.org" target="_blank" rel="noopener">situationlab.org</a></p>
-        </div>
-        <div class="card" style="--c: var(--ctx)">
-          <span class="tag">Immaginari · CC BY-NC-SA</span>
-          <h3>New Metaphors</h3>
-          <p>Imaginaries Lab, Lockton et al. 150 carte e schede per riformulare problemi e immaginare futuri, con una sessione dedicata alla sostenibilità.</p>
-          <p class="meta"><a href="https://imaginari.es" target="_blank" rel="noopener">imaginari.es</a></p>
-        </div>
-        <div class="card" style="--c: var(--trans)">
-          <span class="tag">Sistemico · CC BY 4.0</span>
-          <h3>Systemic Design Toolkit</h3>
-          <p>Design Council: undici strumenti stampabili lungo le fasi del design sistemico. In alternativa il kit di Namahn e shiftN, con sette strumenti gratuiti.</p>
-          <p class="meta"><a href="https://www.designcouncil.org.uk" target="_blank" rel="noopener">designcouncil.org.uk</a></p>
-        </div>
+      <div>
+        <h4>Transition Design</h4>
+        <ul>
+          <li>Fry, <em>Design Futuring</em>, 2009</li>
+          <li>Irwin, <em>Transition Design</em>, Design and Culture, 2015</li>
+          <li>Irwin, Kossoff e Tonkinwise, <em>Transition Design Provocation</em>, 2015</li>
+          <li>Sharpe et al., <em>Three Horizons</em>, Ecology and Society, 2016</li>
+          <li>Jones e Van Ael, <em>Design Journeys through Complex Systems</em>, 2022</li>
+        </ul>
       </div>
-      <p class="note">Una sequenza possibile per l'esercizio: <em>The Thing from the Future</em> per generare l'oggetto dal 2050, poi una mappa degli attori e il backcasting con il Systemic Design Toolkit. Il corso di Speculative Design dell'Australian National University segue un percorso simile: Thing from the Future, carte archetipo, costruzione di mondi.</p>
-    </div>
-  </section>
-
-  <section id="materiali">
-    <div class="wrap">
-      <p class="kicker">Per approfondire · Materiali didattici aperti</p>
-      <h2>Come lo insegnano gli altri</h2>
-      <table>
-        <thead><tr><th>Risorsa</th><th>Perché è utile</th></tr></thead>
-        <tbody>
-          <tr><td>Transition Design Seminar, Carnegie Mellon</td><td>Programma completo del seminario di Irwin, Kossoff e Tonkinwise, con letture</td></tr>
-          <tr><td>Irwin, Tonkinwise, Kossoff, <em>Cuaderno</em> 105, 2021</td><td>Come il Transition Design entra nel curriculum, dalla triennale al dottorato</td></tr>
-          <tr><td>Candy, <em>The Futures of Everyday Life</em>, 2010</td><td>La prima tesi di dottorato tra foresight e design</td></tr>
-          <tr><td>Bendor e Lupetti, <em>Teaching speculative design</em>, 2024</td><td>Il design speculativo come pratica didattica critica, ad accesso aperto</td></tr>
-          <tr><td>Mazé, lezione ad Aalto, 2019</td><td>Design e futures studies come pratica critica e politica</td></tr>
-          <tr><td>Atti RSD e DRS, 2021–2026</td><td>Articoli aperti su design sistemico, transizioni e speculazione</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <section id="letture">
-    <div class="wrap">
-      <p class="kicker">Riferimenti</p>
-      <h2>Letture essenziali</h2>
-      <div class="readings">
-        <div style="--c: var(--spec)">
-          <h3>Design speculativo e critico</h3>
-          <ul>
-            <li>Dunne, <em>Hertzian Tales</em>, 1999</li>
-            <li>Dunne e Raby, <em>Speculative Everything</em>, 2013</li>
-            <li>Dunne e Raby, <em>Not Here, Not Now</em>, 2025</li>
-            <li>Bleecker, <em>Design Fiction</em>, 2009</li>
-            <li>Candy e Dunagan, <em>The People Who Vanished</em>, Futures, 2017</li>
-          </ul>
-        </div>
-        <div style="--c: var(--trans)">
-          <h3>Transition Design</h3>
-          <ul>
-            <li>Fry, <em>Design Futuring</em>, 2009</li>
-            <li>Irwin, <em>Transition Design</em>, Design and Culture, 2015</li>
-            <li>Irwin, Kossoff e Tonkinwise, <em>Transition Design Provocation</em>, 2015</li>
-            <li>Sharpe et al., <em>Three Horizons</em>, Ecology and Society, 2016</li>
-            <li>Jones e Van Ael, <em>Design Journeys through Complex Systems</em>, 2022</li>
-          </ul>
-        </div>
-        <div style="--c: var(--ctx)">
-          <h3>Critiche e contesto</h3>
-          <ul>
-            <li>Tonkinwise, <em>How We Intend to Future</em>, 2014</li>
-            <li>Escobar, <em>Designs for the Pluriverse</em>, 2018</li>
-            <li>Voros, <em>A generic foresight process framework</em>, 2003</li>
-          </ul>
-        </div>
-        <div style="--c: var(--ink)">
-          <h3>Ponti e casi</h3>
-          <ul>
-            <li>Wong et al., <em>Systemic Futures</em>, DIS 2026</li>
-            <li>Lockton, <em>What Doesn't Have a Place in the Future?</em>, 2026</li>
-            <li>Buckton et al., <em>FixOurFood</em>, 2024</li>
-          </ul>
-        </div>
+      <div>
+        <h4>Critiche e contesto</h4>
+        <ul>
+          <li>Tonkinwise, <em>How We Intend to Future</em>, 2014</li>
+          <li>Escobar, <em>Designs for the Pluriverse</em>, 2018</li>
+          <li>Voros, <em>A generic foresight process framework</em>, 2003</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ponti e casi</h4>
+        <ul>
+          <li>Wong et al., <em>Systemic Futures</em>, DIS 2026</li>
+          <li>Lockton, <em>What Doesn't Have a Place in the Future?</em>, 2026</li>
+          <li>Buckton et al., <em>FixOurFood</em>, 2024</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -500,11 +620,49 @@
 </main>
 
 <footer>
-  <div class="wrap">
+  <div class="page">
     <span>Progettare futuri · Dal design speculativo al Transition Design</span>
     <span>Storia del Pensiero Sistemico · Lab di Storia per i Sistemi Alimentari</span>
   </div>
 </footer>
+
+<script>
+  // Immagini dei casi studio: se il file esiste mostra la foto, altrimenti il riquadro nero
+  document.querySelectorAll('.thumb img').forEach(function (img) {
+    function ok() { img.parentNode.classList.add('has-img'); }
+    function ko() { img.remove(); }
+    if (img.complete && img.naturalWidth > 0) ok();
+    else if (img.complete) ko();
+    else { img.addEventListener('load', ok); img.addEventListener('error', ko); }
+  });
+
+  // Filtri dell'archivio
+  var cases = Array.prototype.slice.call(document.querySelectorAll('.case'));
+  var buttons = document.querySelectorAll('#filtri button');
+  buttons.forEach(function (b) {
+    var f = b.getAttribute('data-filter');
+    var n = f === 'tutti' ? cases.length : cases.filter(function (c) { return c.getAttribute('data-cat').split(' ').indexOf(f) > -1; }).length;
+    b.querySelector('.count').textContent = n;
+    if (n === 0 && f !== 'tutti') b.parentNode.hidden = true;
+    b.addEventListener('click', function () {
+      buttons.forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+      cases.forEach(function (c) {
+        c.hidden = !(f === 'tutti' || c.getAttribute('data-cat').split(' ').indexOf(f) > -1);
+      });
+    });
+  });
+
+  // Voce attiva nella barra in alto
+  var links = document.querySelectorAll('.top nav a');
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) {
+        links.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id); });
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  document.querySelectorAll('section.row').forEach(function (s) { obs.observe(s); });
+</script>
 
 </body>
 </html>
